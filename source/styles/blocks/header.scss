@@ -3,3 +3,13 @@
   color: #ffffff;
   padding: 10px 15px;
 }
+
+@media (min-width: 768px) {
+  .logo__text {
+    display: none;
+  }
+
+  .header__burger {
+    display: none;
+  }
+}
