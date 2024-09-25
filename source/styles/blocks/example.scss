@@ -1,0 +1,110 @@
+.example__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 111%;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 100%;
+  }
+}
+
+.example__description {
+  font-weight: 400;
+  color: $special_dark-grey;
+}
+
+.example__number {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 123%;
+  }
+}
+
+.example__result {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}
+
+.example__price {
+  font-family: $secondary-font;
+  font-weight: 400;
+  line-height: 143%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
+
+.example__slider {
+  display: flex;
+  position: relative;
+}
+
+.example__button {
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: absolute;
+  padding: 0;
+}
+
+.example__button::before {
+  content: "";
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+}
+
+.example__button::after {
+  content: "";
+  mask-image: url("../../icons/stack.svg#slider");
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__group {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

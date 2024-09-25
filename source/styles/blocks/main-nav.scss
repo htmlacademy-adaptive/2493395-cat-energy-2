@@ -1,0 +1,23 @@
+.main-nav__item a {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 133%;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 436px;
+  gap: 33px;
+  flex-wrap: wrap;
+}
+

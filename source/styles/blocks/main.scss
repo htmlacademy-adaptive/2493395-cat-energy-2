@@ -1,0 +1,12 @@
+.main__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
+}

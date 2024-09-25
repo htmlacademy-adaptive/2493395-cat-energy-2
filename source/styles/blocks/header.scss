@@ -1,15 +1,32 @@
 .header {
-  background-color: #663399;
+  background-color: #ffffff;
   color: #ffffff;
-  padding: 10px 15px;
+  padding: 10px 0;
 }
 
-@media (min-width: 768px) {
-  .logo__text {
-    display: none;
-  }
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
+@media (min-width: $tablet-width) {
   .header__burger {
     display: none;
+  }
+}
+
+.header__burger {
+  background-image: url("../../icons/stack.svg#burger-icon");
+  width: 24px;
+  height: 24px;
+}
+
+.header-nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 }

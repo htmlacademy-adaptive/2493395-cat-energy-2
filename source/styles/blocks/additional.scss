@@ -1,0 +1,72 @@
+.additional__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+  }
+}
+
+.additional__promo {
+  background-color: #68b738;
+  min-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    padding: 71px 125px 69px;
+    justify-content: right;
+  }
+}
+
+.additional__promo p {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+
+  max-width: 162px;
+  margin: 0 0 43px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.additional__promo p::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#gift-icon");
+  background-size: 80px 83px;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 80px;
+  height: 83px;
+  left: 50%;
+  bottom: 48px;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: -264px;
+    transform: translate(-100%, -50%);
+  }
+}
+
+.additional__list {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+}

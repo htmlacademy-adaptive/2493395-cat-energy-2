@@ -1,0 +1,15 @@
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+  }
+}
