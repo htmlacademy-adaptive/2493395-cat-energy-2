@@ -1,10 +1,19 @@
 .footer__wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 240px;
+  justify-content: space-evenly;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    min-height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 169px;
   }
 }

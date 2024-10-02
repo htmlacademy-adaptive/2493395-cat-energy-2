@@ -1,3 +1,10 @@
+.example {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 224px;
+  }
+}
+
 .example__title {
   font-family: $secondary-font;
   font-weight: 400;
@@ -56,9 +63,14 @@
   }
 }
 
+.example__picture {
+  display: flex;
+}
+
 .example__slider {
   display: flex;
   position: relative;
+  justify-content: center;
 }
 
 .example__button {
@@ -70,31 +82,33 @@
   cursor: pointer;
   position: absolute;
   padding: 0;
-}
-
-.example__button::before {
-  content: "";
-  border: 2px solid #666666;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  border-radius: 50%;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-}
+  transform: translate(-50%, 0);
 
-.example__button::after {
-  content: "";
-  mask-image: url("../../icons/stack.svg#slider");
-  background-color: #666666;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  &::before {
+    content: "";
+    border: 2px solid #666666;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+    mask-image: url("../../icons/stack.svg#slider");
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .example__list {

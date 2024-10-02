@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .works__title {

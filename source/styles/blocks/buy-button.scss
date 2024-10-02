@@ -18,4 +18,8 @@
   @media (min-width: $tablet-width) {
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+  }
 }

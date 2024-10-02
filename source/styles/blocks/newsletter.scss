@@ -2,6 +2,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
   }
+
+  div {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 .newsletter__title {
@@ -38,10 +46,12 @@
 .newsletter__form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    padding-left: 38px;
+    padding: 0 38px;
   }
 }
 
@@ -59,7 +69,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    max-width: 376px;
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 496px;
   }
 }
 
@@ -71,12 +86,27 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 100%;
-  height: 56px;
+  min-height: 56px;
   background-color: #68b738;
   border: none;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    max-width: 256px;
+    width: 256px;
+  }
+}
+
+.newsletter__fieldset {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 376px;
+  }
+
+  label {
+    width: 100%;
   }
 }

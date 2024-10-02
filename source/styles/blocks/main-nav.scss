@@ -1,23 +1,78 @@
-.main-nav__item a {
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 100%;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #000000;
-  text-decoration: none;
+.main-nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  bottom: 1px;
+  left: 0;
+  transform: translate(0, 100%);
+  display: none;
 
   @media (min-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 133%;
+    display: block;
+    position: unset;
+    width: 436px;
+    gap: 33px;
+    background: none;
+    transform: translate(0, 0);
+  }
+
+  &.is-show {
+    display: block;
   }
 }
 
 .main-nav__list {
   display: flex;
-  justify-content: space-between;
-  width: 436px;
-  gap: 33px;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 476px;
+  }
 }
 
+.main-nav__item {
+  padding: 22px 10px 24px;
+  min-height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-height: 36px;
+  }
+
+  a {
+    font-family: $secondary-font;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 133%;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 100%;
+    }
+  }
+
+  &.main-nav__item--contrast {
+    a {
+      color: #000000;
+    }
+  }
+}

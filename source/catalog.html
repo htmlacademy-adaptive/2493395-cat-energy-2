@@ -14,7 +14,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.json">
-  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -31,27 +30,30 @@
       <a class="header__logo logo is-disabled" href="index.html">
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
-      <nav class="header-nav main-nav">
+      <nav class="header-nav main-nav js-navigation">
 
         <ul class="main-nav__list ">
-          <li class="main-nav__item ">
+          <li class="main-nav__item main-nav__item--contrast">
             <a href="index.html">
               главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item main-nav__item--active main-nav__item--contrast">
             <a href="#">
               каталог продукции
             </a>
           </li>
-          <li class="main-nav__item ">
+          <li class="main-nav__item main-nav__item--contrast">
             <a href="#">
               подбор программы
             </a>
           </li>
         </ul>
       </nav>
-      <button class="header__burger" type="button" aria-label="открыть меню">
+      <button class="header__burger js-burger" type="button" aria-label="открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
@@ -246,9 +248,10 @@
         </ul>
       </div>
     </section>
-    <section class="additional">
-      <div class="additional__wrapper container">
-        <h2 class="additional__title">Дополнительные товары</h2>
+    <section class="additional container">
+      <h2 class="additional__title">Дополнительные товары</h2>
+      <div class="additional__wrapper">
+
         <ul class="additional__list ">
           <li class="additional__item optional">
             <h3 class="optional__title">Сахарозаменитель</h3>
@@ -293,10 +296,15 @@
       <div class="newsletter__wrapper container">
         <h2 class="newsletter__title">Акции и новинки</h2>
         <div>
-          <p class="newsletter__description"><label for="email">Подпишитесь на наши новости и не пропустите ни одного предложения!</label></p>
+          <p class="newsletter__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="newsletter__email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
-            <input class="newsletter__button" type="submit" value="Подписаться">
+            <fieldset class="newsletter__fieldset">
+              <legend class="visually-hidden">Заполните форму</legend>
+              <label>
+                <input class="newsletter__email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+              </label>
+            </fieldset>
+            <button class="newsletter__button" type="submit">Подписаться</button>
           </form>
         </div>
       </div>
@@ -306,7 +314,10 @@
       <div class="contacts__wrapper">
         <div class="contacts__group container">
           <p class="contacts__description">приглашаем к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+
+            Санкт-Петербург
+          </address>
         </div>
         <picture>
           <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" width="1440" height="400">
@@ -345,7 +356,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
