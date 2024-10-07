@@ -7,22 +7,6 @@
   }
 }
 
-.additional__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 100%;
-  color: #000000;
-
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-  }
-}
-
 .additional__promo {
   background-image: url("../../images/gift-background-mobile.png");
   min-height: 290px;
@@ -94,6 +78,8 @@
 
 
 .additional__list {
+  margin-bottom: 35px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
   }

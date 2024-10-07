@@ -18,32 +18,32 @@
 
 <body class="page__body">
 
-  <header class="header">
+  <header class="header header--secondary">
     <div class="header__wrapper container">
-      <a class="header__logo is-disabled" href="index.html">
+      <a class="header__logo" href="index.html">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
           <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
           <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
         </picture>
       </a>
-      <a class="header__logo logo is-disabled" href="index.html">
-        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      <a class="header__logo-text" href="index.html">
+        <img src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
       </a>
       <nav class="header-nav main-nav js-navigation">
 
         <ul class="main-nav__list ">
-          <li class="main-nav__item main-nav__item--contrast">
+          <li class="main-nav__item ">
             <a href="index.html">
               главная
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--active main-nav__item--contrast">
-            <a href="#">
+          <li class="main-nav__item main-nav__item--active ">
+            <a class="is-disabled" href="#">
               каталог продукции
             </a>
           </li>
-          <li class="main-nav__item main-nav__item--contrast">
+          <li class="main-nav__item ">
             <a href="#">
               подбор программы
             </a>
@@ -86,7 +86,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -111,7 +113,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -136,7 +140,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -161,7 +167,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -186,7 +194,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -211,7 +221,9 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -236,20 +248,26 @@
                 </div>
               </div>
             </div>
-            <button class="product-card__button buy-button" type="button">заказать</button>
+            <button class="product-card__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="catalog__item product-card product-card--end">
             <div class="product-card__group--end">
               <p class="product-card__name product-card__name--end">Показать еще 100500 товаров</p>
               <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             </div>
-            <button class="product-card__button--end" type="button">показать все</button>
+            <button class="product-card__button--end" type="button">
+              <p>показать все</p>
+            </button>
           </li>
         </ul>
       </div>
     </section>
     <section class="additional container">
-      <h2 class="additional__title">Дополнительные товары</h2>
+      <div class="line-wrapper">
+        <h2>Дополнительные товары</h2>
+      </div>
       <div class="additional__wrapper">
 
         <ul class="additional__list ">
@@ -259,7 +277,9 @@
               <p>1 упаковка (100 г)</p>
               <p>200 ₽</p>
             </div>
-            <button class="additional__button buy-button" type="button">заказать</button>
+            <button class="additional__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="additional__item optional">
             <h3 class="optional__title">питьевая вода</h3>
@@ -267,7 +287,9 @@
               <p>5 литров</p>
               <p>50 ₽</p>
             </div>
-            <button class="additional__button buy-button" type="button">заказать</button>
+            <button class="additional__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="additional__item optional">
             <h3 class="optional__title">молоко</h3>
@@ -275,7 +297,9 @@
               <p>1 литр</p>
               <p>100 ₽</p>
             </div>
-            <button class="additional__button buy-button" type="button">заказать</button>
+            <button class="additional__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
           <li class="additional__item optional">
             <h3 class="optional__title">витамины</h3>
@@ -283,7 +307,9 @@
               <p>1 упаковка (30 г)</p>
               <p>300 ₽</p>
             </div>
-            <button class="additional__button buy-button" type="button">заказать</button>
+            <button class="additional__button buy-button" type="button">
+              <p>заказать</p>
+            </button>
           </li>
         </ul>
         <div class="additional__promo">
@@ -294,7 +320,9 @@
     </section>
     <section class="newsletter">
       <div class="newsletter__wrapper container">
-        <h2 class="newsletter__title">Акции и новинки</h2>
+        <div class="line-wrapper">
+          <h2 class="newsletter__title">Акции и новинки</h2>
+        </div>
         <div>
           <p class="newsletter__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
@@ -304,7 +332,9 @@
                 <input class="newsletter__email" type="email" id="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
               </label>
             </fieldset>
-            <button class="newsletter__button" type="submit">Подписаться</button>
+            <button class="newsletter__button button" type="submit">
+              <p>Подписаться</p>
+            </button>
           </form>
         </div>
       </div>
@@ -329,7 +359,9 @@
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <img class="footer__logo" src="images/logo-text.svg" width="128" height="24" alt="логотип">
+      <div class="footer__logo">
+        <img src="images/logo-text.svg" width="128" height="24" alt="логотип">
+      </div>
       <ul class="footer__list social">
         <li class="social__item">
           <a class="social__link" href="#" aria-label="ВК">
@@ -349,8 +381,8 @@
         </li>
       </ul>
       <div class="footer__copyright copyright">
-        <a class="copyright__links" href="#">HTML Academy</a>
-        <a class="copyright__links" href="#" aria-label="HTML Academy">
+        <a class="copyright__text" href="#">HTML Academy</a>
+        <a class="copyright__link" href="#" aria-label="HTML Academy">
           <img src="images/html-logo.svg" width="27" height="34" alt="HTML Academy">
         </a>
       </div>

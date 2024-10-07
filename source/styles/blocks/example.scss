@@ -1,4 +1,7 @@
 .example {
+  background-color: #eaeaea;
+  padding: 25px 0 40px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 224px;
@@ -30,6 +33,7 @@
   line-height: 100%;
   text-align: center;
   color: #000000;
+  padding: 14px 5px 8px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -37,15 +41,39 @@
   }
 }
 
+.example__item {
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    min-height: 77px;
+  }
+}
+
+
 .example__result {
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
   color: $special_dark-grey;
+  margin: 0 0 -15px;
+  max-width: 77px;
+  padding: 0 5px;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
+    max-width: 142px;
+    margin: 0 0 -6px;
+    padding: 0 8px;
   }
 }
 
@@ -59,7 +87,18 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 100%;
+    max-width: 175px;
+    text-align: end;
+    min-height: 77px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: max-content;
+
+    span {
+      padding-left: 64px;
+    }
   }
 }
 
@@ -114,11 +153,27 @@
 .example__list {
   display: flex;
   justify-content: space-between;
+  margin: 20px 0 34px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+  }
 }
+
 
 .example__group {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

@@ -1,12 +1,17 @@
 .header {
   color: #ffffff;
-  padding: 10px 0;
   z-index: 1;
   position: relative;
+  padding: 13px 0 14px;
 
   @media (min-width: $desktop-width) {
-    margin-top: 55px;
+    margin: 55px 0 29px;
+    padding: 0;
   }
+}
+
+.header--secondary {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .header__wrapper {
@@ -74,5 +79,50 @@
 .header-nav {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.header__logo {
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: 0.4s;
+  }
+}
+
+
+.header__logo-text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+
+  &:active {
+    opacity: 0.6;
+    transition: 0.4s;
   }
 }

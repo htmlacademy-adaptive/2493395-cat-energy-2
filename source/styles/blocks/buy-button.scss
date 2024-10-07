@@ -22,4 +22,14 @@
   @media (min-width: $desktop-width) {
     max-width: 244px;
   }
+
+  &:hover {
+    background-color: #5eaa2f;
+    transition: 0.4s;
+  }
+
+  &:active p {
+    opacity: 0.3;
+    transition: 0.4s;
+  }
 }

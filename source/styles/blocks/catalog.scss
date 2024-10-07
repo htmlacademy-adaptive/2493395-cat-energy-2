@@ -1,11 +1,13 @@
 .catalog__list {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 0 -20px;
 
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

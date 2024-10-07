@@ -1,8 +1,17 @@
 .social {
   display: flex;
-  width: 132px;
   flex-wrap: wrap;
   gap: 24px;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    max-width: 132px;
+    border: none;
+    padding: 0;
+  }
 }
 
 

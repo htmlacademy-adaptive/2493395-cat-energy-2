@@ -1,0 +1,9 @@
+.button:hover {
+  background-color: #5eaa2f;
+  transition: 0.4s;
+}
+
+.button:active p {
+  opacity: 0.3;
+  transition: 0.4s;
+}

@@ -1,9 +1,16 @@
+.works {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 69px;
+  }
+}
+
 .works__list {
   display: grid;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    gap: 37px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +40,11 @@
   min-height: 60px;
   align-items: center;
   padding: 2px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .works__description::before {
@@ -51,44 +63,85 @@
   }
 }
 
-.works__description--leaf::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#leaf-icon");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+.works__description--leaf {
+  max-width: 230px;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#leaf-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
-.works__description--fill::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#fill-icon");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+.works__description--fill {
+  max-width: 246px;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#fill-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
-.works__description--eat::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#eat-icon");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+.works__description--eat {
+  max-width: 248px;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#eat-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
-.works__description--watch::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#watch-icon");
-  background-size: 30px 32px;
-  background-repeat: no-repeat;
-  background-position: 50%;
+.works__description--watch {
+  max-width: 250px;
+
+  @media (min-width: $tablet-width) {
+    white-space: pre-line;
+  }
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#watch-icon");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
 }
 
 .works__item {
   display: flex;
-  justify-content: flex-end;
+  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+    margin: 0;
     padding: 151px 0 57px;
+    width: fit-content;
+    position: relative;
+  }
+
+  span {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      font-family: $secondary-font;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 100%;
+      text-align: center;
+      color: #f2f2f2;
+    }
   }
 }

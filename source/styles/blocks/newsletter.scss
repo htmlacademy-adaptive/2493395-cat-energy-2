@@ -12,22 +12,6 @@
   }
 }
 
-.newsletter__title {
-  font-family: $secondary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 100%;
-  color: #000000;
-
-  @media (min-width: $tablet-width) {
-    font-size: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 40px;
-  }
-}
-
 .newsletter__description {
   font-family: $secondary-font;
   font-weight: 400;
@@ -61,9 +45,9 @@
   font-size: 20px;
   text-transform: uppercase;
   color: $special_dark-grey;
-  width: 100%;
+  width: 280px;
   height: 56px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   padding: 13px;
   margin-bottom: 16px;
 
@@ -75,6 +59,22 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     width: 496px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    transition: 0.4s;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+    box-shadow: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    transition: 0.4s;
   }
 }
 

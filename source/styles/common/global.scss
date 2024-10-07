@@ -11,8 +11,14 @@ body {
   width: 320px;
   position: relative;
 
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 129%;
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    font-size: 16px;
+    line-height: 150%;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,6 +45,7 @@ dd {
 
 p {
   padding: 0;
+  margin: 0;
 }
 
 button {
