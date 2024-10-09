@@ -76,8 +76,13 @@
     }
   }
 
-  &:hover {
+  &:hover a {
     opacity: 0.6;
+    transition: 0.4s;
+  }
+
+  &:active a {
+    opacity: 0.3;
     transition: 0.4s;
   }
 }

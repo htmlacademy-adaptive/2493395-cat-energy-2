@@ -148,6 +148,37 @@
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover {
+    background-color: #68b738;
+    transition: 0.4s;
+
+    &::before {
+      border-color: #68b738;
+      transition: 0.4s;
+    }
+
+    &::after {
+      background-color: #68b738;
+      transition: 0.4s;
+    }
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    transition: 0.4s;
+    opacity: 0.6;
+
+    &::before {
+      border-color: #5eaa2f;
+      transition: 0.4s;
+    }
+
+    &::after {
+      background-color: #5eaa2f;
+      transition: 0.4s;
+    }
+  }
 }
 
 .example__list {

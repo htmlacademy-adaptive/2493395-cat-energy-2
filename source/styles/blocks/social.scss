@@ -17,4 +17,16 @@
 
 .social__link {
   display: flex;
+  cursor: pointer;
+
+  &:hover svg path {
+    fill: #68b738;
+    transition: 0.4s;
+  }
+
+  &:active svg path {
+    fill: #68b738;
+    transition: 0.4s;
+    opacity: 0.3;
+  }
 }
