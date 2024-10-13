@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   gap: 24px;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0 19px;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
 
@@ -11,6 +11,11 @@
     max-width: 132px;
     border: none;
     padding: 0;
+    margin-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 34px;
   }
 }
 

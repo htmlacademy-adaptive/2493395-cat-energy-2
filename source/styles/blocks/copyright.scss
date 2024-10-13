@@ -3,11 +3,11 @@
   justify-content: space-between;
   align-self: stretch;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px 0 19px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    width: 168px;
+    width: 162px;
   }
 
   &:hover .copyright__link svg path {

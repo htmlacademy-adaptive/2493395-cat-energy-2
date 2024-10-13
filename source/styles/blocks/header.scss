@@ -4,6 +4,10 @@
   position: relative;
   padding: 13px 0 14px;
 
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 64px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 55px 0 29px;
     padding: 0;
@@ -76,12 +80,6 @@
   }
 }
 
-.header-nav {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
-}
-
 .header__logo {
   width: 33px;
   height: 38px;
@@ -105,15 +103,21 @@
     opacity: 0.6;
     transition: 0.4s;
   }
+
+  picture {
+    display: flex;
+  }
 }
 
 
 .header__logo-text {
   width: 101px;
-  height: 18px;
+  height: 20px;
+  margin: 0 10px 0 0;
 
   @media (min-width: $tablet-width) {
     display: none;
+    margin: 0;
   }
 
   &:hover {
@@ -124,5 +128,9 @@
   &:active {
     opacity: 0.6;
     transition: 0.4s;
+  }
+
+  &--catalog {
+    margin: 6px 10px 0 0;
   }
 }

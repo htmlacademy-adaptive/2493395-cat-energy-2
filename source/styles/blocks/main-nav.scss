@@ -8,16 +8,17 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
     position: unset;
     max-width: 436px;
-    gap: 33px;
+    display: flex;
+    transform: translate(0);
+    margin-right: 4px;
     background: none;
-    transform: translate(0, 0);
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 475px;
+    max-width: 476px;
+    margin-right: 1px;
   }
 
   &.is-show {
@@ -34,12 +35,15 @@
     justify-content: flex-start;
     width: 100%;
     gap: 33px;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     width: 476px;
+    gap: 31.5px 33px;
   }
 }
+
 
 .main-nav__item {
   padding: 22px 10px 24px;
@@ -100,6 +104,12 @@
       bottom: -8px;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      bottom: -12px;
     }
   }
 }

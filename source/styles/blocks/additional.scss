@@ -13,6 +13,8 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/gift-background-tablet.png");
