@@ -87,7 +87,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -114,7 +114,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -141,7 +141,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -168,7 +168,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -195,7 +195,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -222,7 +222,7 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card">
@@ -249,16 +249,16 @@
               </div>
             </div>
             <button class="product-card__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="catalog__item product-card product-card--end">
-            <div class="product-card__group--end">
+            <div class="product-card__wrapper product-card__wrapper--end">
               <p class="product-card__name product-card__name--end">Показать еще 100500 товаров</p>
               <p class="product-card__description">На самом деле вкусов гораздо больше!</p>
             </div>
-            <button class="product-card__button--end" type="button">
-              <p>показать все</p>
+            <button class="product-card__button product-card__button--end" type="button">
+              <span>показать все</span>
             </button>
           </li>
         </ul>
@@ -266,7 +266,7 @@
     </section>
     <section class="additional container">
       <div class="line-wrapper">
-        <h2>Дополнительные товары</h2>
+        <h2 class="additional__title">Дополнительные товары</h2>
       </div>
       <div class="additional__wrapper">
 
@@ -278,7 +278,7 @@
               <p>200 ₽</p>
             </div>
             <button class="additional__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="additional__item optional">
@@ -288,7 +288,7 @@
               <p>50 ₽</p>
             </div>
             <button class="additional__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="additional__item optional">
@@ -298,7 +298,7 @@
               <p>100 ₽</p>
             </div>
             <button class="additional__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
           <li class="additional__item optional">
@@ -308,13 +308,14 @@
               <p>300 ₽</p>
             </div>
             <button class="additional__button buy-button" type="button">
-              <p>заказать</p>
+              <span>заказать</span>
             </button>
           </li>
         </ul>
         <div class="additional__promo">
 
-          <p>Закажите все и получите чехол для кота в подарок!</p>
+          <p>Закажите все
+            и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -323,7 +324,7 @@
         <div class="line-wrapper">
           <h2 class="newsletter__title">Акции и новинки</h2>
         </div>
-        <div>
+        <div class="newsletter__group">
           <p class="newsletter__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="newsletter__fieldset">
@@ -333,7 +334,7 @@
               </label>
             </fieldset>
             <button class="newsletter__button button" type="submit">
-              <p>Подписаться</p>
+              <span>Подписаться</span>
             </button>
           </form>
         </div>
@@ -350,11 +351,9 @@
             Санкт-Петербург
           </address>
         </div>
-        <picture class="contacts__map">
-          <source type="image/jpeg" media="(min-width: 1440px)" srcset="images/location-desktop@1x.jpg 1x, images/location-desktop@2x.jpg 2x" width="1440" height="400">
-          <source type="image/jpeg" media="(min-width: 768px)" srcset="images/location-tablet@1x.jpg 1x, images/location-tablet@2x.jpg 2x" width="768" height="400">
-          <img src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="карта">
-        </picture>
+        <div class="contacts__map">
+          <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?ll=30.322444%2C59.938575&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=17"></iframe>
+        </div>
       </div>
     </section>
   </main>
@@ -398,8 +397,8 @@
         </li>
       </ul>
       <div class="footer__copyright copyright">
-        <a class="copyright__text" href="#">HTML Academy</a>
-        <a class="copyright__link" href="#" aria-label="HTML Academy">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
           <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_130922_344)">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666" />
