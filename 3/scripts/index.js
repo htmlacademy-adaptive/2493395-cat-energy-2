@@ -1,1 +1,0 @@
-window.addEventListener("load",()=>{let e=document.querySelector(".js-burger"),s=document.querySelector(".js-navigation");e.classList.remove("is-active"),s.classList.remove("is-show"),e.addEventListener("click",t=>{t.preventDefault(),e.classList.toggle("is-active"),s.classList.toggle("is-show")})});
