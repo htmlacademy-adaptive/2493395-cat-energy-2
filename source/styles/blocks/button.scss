@@ -1,0 +1,16 @@
+.button {
+  cursor: pointer;
+  min-height: fit-content;
+  word-break: break-all;
+  padding: 10px 15px;
+
+  &:hover {
+    background-color: #5eaa2f;
+    transition: 0.4s;
+  }
+
+  &:active span {
+    opacity: 0.3;
+    transition: 0.4s;
+  }
+}

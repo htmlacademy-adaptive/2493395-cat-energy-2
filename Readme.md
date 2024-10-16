@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Игорь Самойлов](https://up.htmlacademy.ru/adaptive-individual/2/user/2493395).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Миронов](https://htmlacademy.ru/profile/id1336881).
 
 ---
 

@@ -1,0 +1,138 @@
+.newsletter {
+  padding: 5px 0 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 80px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
+  }
+}
+
+.newsletter__group {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.newsletter__description {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 133%;
+    max-width: 632px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
+  }
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    padding: 0 38px;
+  }
+}
+
+.newsletter__email {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  width: 280px;
+  height: 56px;
+  border: 1px solid #e7e7e7;
+  padding: 13px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 496px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+    transition: 0.4s;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid #444444;
+    box-shadow: none;
+  }
+
+  &:invalid {
+    border: 2px solid #ff8282;
+    transition: 0.4s;
+  }
+}
+
+.newsletter__button {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 100%;
+  min-height: 56px;
+  background-color: #68b738;
+  border: none;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
+
+.newsletter__fieldset {
+  display: flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    max-width: 376px;
+  }
+
+  label {
+    width: 100%;
+  }
+}
+
+.newsletter__title {
+  margin: 0 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 72px;
+  }
+}

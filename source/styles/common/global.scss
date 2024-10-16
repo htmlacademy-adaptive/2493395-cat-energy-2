@@ -1,1 +1,54 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 320px;
+  position: relative;
+
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 129%;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: none;
+  padding: 0;
+}
