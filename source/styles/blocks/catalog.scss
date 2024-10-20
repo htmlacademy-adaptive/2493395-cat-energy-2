@@ -12,7 +12,8 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 -20px;
-
+  list-style: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;

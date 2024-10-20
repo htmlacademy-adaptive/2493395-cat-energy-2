@@ -29,6 +29,9 @@
 .main-nav__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     flex-flow: wrap;
@@ -78,16 +81,16 @@
       color: #111111;
       line-height: 100%;
     }
-  }
 
-  &:hover a {
-    opacity: 0.6;
-    transition: 0.4s;
-  }
+    &:hover {
+      opacity: 0.6;
+      transition: 0.4s;
+    }
 
-  &:active a {
-    opacity: 0.3;
-    transition: 0.4s;
+    &:active {
+      opacity: 0.3;
+      transition: 0.4s;
+    }
   }
 }
 

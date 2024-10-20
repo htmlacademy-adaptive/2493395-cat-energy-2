@@ -41,7 +41,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
     flex-flow: row;
     gap: 40px;
     align-items: center;
@@ -76,6 +75,7 @@
     line-height: 100%;
     color: $special_dark-grey;
     margin: 0;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       line-height: 125%;

@@ -39,6 +39,10 @@
     border: none;
     padding: 0;
   }
+}
+
+.footer__link {
+  display: flex;
 
   &:hover svg path {
     fill: #3e3e3e;
