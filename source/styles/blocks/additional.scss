@@ -29,12 +29,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #68b738;
+  position: relative;
+
+  @media only screen and (min-resolution: 192dpi) {
+    background-image: url("../../images/gift-background-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     background-image: url("../../images/gift-background-tablet.png");
     min-height: 200px;
-    padding: 71px 125px 69px;
-    justify-content: right;
+    padding: 71px 125px 69px 421px;
+    justify-content: center;
+
+    @media only screen and (min-resolution: 192dpi) {
+      background-image: url("../../images/gift-background-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -42,6 +51,10 @@
     padding: 133px 42px 43px;
     justify-content: center;
     min-height: 288px;
+
+    @media only screen and (min-resolution: 192dpi) {
+      background-image: url("../../images/gift-background-desktop@2x.png");
+    }
   }
 
   p {
@@ -55,7 +68,7 @@
     white-space: pre-line;
     max-width: 161px;
     margin: 0 2px 43px 0;
-    padding-top: 180px;
+    padding: 180px 0 0;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -81,12 +94,13 @@
     transform: translate(-49%, -100%);
 
     @media (min-width: $tablet-width) {
-      top: 50%;
       left: -264px;
-      transform: translate(-100%, -52%);
+      top: 50%;
+      transform: translate(-100%, -54%);
     }
 
     @media (min-width: $desktop-width) {
+      display: flex;
       top: -46px;
       left: 50%;
       transform: translate(-50%, -100%);
@@ -96,7 +110,9 @@
 
 
 .additional__list {
-  margin-bottom: 34px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;

@@ -12,8 +12,7 @@
 
 .nutrition-programs__item {
   background-color: #f2f2f2;
-  padding: 30px 20px 17px;
-  min-height: 266px;
+  padding: 30px 20px 18px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -22,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    min-width: 570px;
   }
 
   h3 {
@@ -51,24 +50,23 @@
   }
 
   p {
+    padding: 0 0 22px;
+    margin: 0;
     font-weight: 400;
     color: $special_dark-grey;
-    max-width: 240px;
-    padding-bottom: 22px;
     border-bottom: 1px solid #d9d9d9;
     flex-grow: 1;
 
     @media (min-width: $tablet-width) {
       color: #000000;
-      max-width: 340px;
       padding-bottom: 48px;
-      margin: 0;
       border-bottom: none;
+      padding-right: 265px;
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 460px;
       padding-bottom: 23px;
+      padding-right: 0;
     }
   }
 }
@@ -81,7 +79,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 200px 211px;
-    background-position: 445px 81px;
+    background-position: calc(100% - 63px) 81px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +96,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position: 411px 91px;
+    background-position: calc(100% - 29px) 91px;
   }
 
   @media (min-width: $desktop-width) {
@@ -125,6 +123,7 @@
   max-width: 250px;
   word-break: break-all;
   min-height: fit-content;
+  transition: 0.4s ease;
 
   @media (min-width: $tablet-width) {
     padding: 4px 66px 4px 0;
@@ -175,19 +174,27 @@
   &:hover::before {
     width: calc(18px + 8px);
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .nutrition-programs__list {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 80px;
-    flex-direction: row;
+    gap: 30px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

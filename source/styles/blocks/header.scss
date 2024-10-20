@@ -43,6 +43,8 @@
   height: 24px;
   position: relative;
   cursor: pointer;
+  border: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: none;

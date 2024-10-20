@@ -5,7 +5,6 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    max-width: 324px;
     min-height: 430px;
     padding: 0 37px 40px;
     background-color: #f2f2f2;
@@ -45,6 +44,7 @@
   text-transform: uppercase;
   color: #222222;
   max-width: 76px;
+  padding: 0;
   margin: 1px 0 15px;
 
   @media (min-width: $tablet-width) {
@@ -82,6 +82,7 @@
     min-height: fit-content;
     word-break: break-all;
     max-width: 50%;
+    padding: 0;
 
     @media (min-width: $tablet-width) {
       line-height: 125%;
@@ -145,6 +146,8 @@
   line-height: 133%;
   color: $special_dark-grey;
   text-align: center;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -167,6 +170,8 @@
   cursor: pointer;
   min-height: fit-content;
   word-break: break-all;
+  text-decoration: none;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 250px;
@@ -212,19 +217,33 @@
     margin-top: -71px;
   }
 
-  picture {
+  &--end {
+    margin-bottom: 20px;
     display: flex;
+    flex-direction: column;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 22px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 170px;
+      margin: 0;
     }
   }
+}
 
-  picture img {
+.product-card__picture {
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
+
+  & img {
     object-fit: cover;
     width: 140px;
     height: 107px;
@@ -237,20 +256,6 @@
     @media (min-width: $desktop-width) {
       width: 169px;
       height: 210px;
-    }
-  }
-
-  &--end {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 170px;
-      margin: 0;
     }
   }
 }

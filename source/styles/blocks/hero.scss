@@ -8,6 +8,25 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 134px;
   }
+
+  &--background::before {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: flex;
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-color: #68b738;
+      background-image: url("../../images/index-background-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
 
 .hero__wrapper {
@@ -38,7 +57,7 @@
     object-fit: cover;
     align-items: center;
     padding: 27px 35px 164px;
-    max-width: 320px;
+    width: 100%;
 
     @media (min-width: $tablet-width) {
       background: none;
@@ -89,6 +108,7 @@
   text-transform: uppercase;
   color: #ffffff;
   order: 2;
+  padding: 0;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -113,7 +133,7 @@
   @media (min-width: $tablet-width) {
     order: 4;
     z-index: -1;
-    margin-top: -114px;
+    margin: -114px auto 0;
     width: 709px;
     height: 609px;
   }
@@ -176,19 +196,5 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 0 80px;
-  }
-}
-
-.hero__background {
-  display: none;
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    top: 0;
-    right: 0;
-    background-color: #68b738;
   }
 }
