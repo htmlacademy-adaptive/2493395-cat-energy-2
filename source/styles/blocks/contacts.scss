@@ -59,6 +59,15 @@
   }
 }
 
+.contacts__info {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1220px;
+  }
+}
+
 .contacts__group {
   padding: 26px 20px;
   display: flex;

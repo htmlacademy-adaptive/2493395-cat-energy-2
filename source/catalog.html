@@ -24,23 +24,25 @@
 
   <header class="header header--secondary" data-test="header">
     <div class="header__wrapper container">
-      <a class="header__logo" href="index.html">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
-        </picture>
-      </a>
-      <a class="header__logo-text header__logo-text--catalog" href="index.html">
-        <img src="images/logo-text.svg" width="101" height="20" alt="Кэт энерджи">
-      </a>
-      <button class="header__burger js-burger" type="button" aria-label="открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="header-nav main-nav js-navigation">
 
+      <div class="header__group">
+        <a class="header__logo is-disabled" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
+          </picture>
+        </a>
+        <a class="header__logo-text is-disabled" href="index.html">
+          <img src="images/logo-text.svg" width="101" height="20" alt="Кэт энерджи">
+        </a>
+        <button class="header__burger js-burger is-active" type="button" aria-label="открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--no-js js-navigation">
         <ul class="main-nav__list ">
           <li class="main-nav__item ">
             <a href="index.html">
@@ -62,10 +64,10 @@
     </div>
   </header>
   <main class="main">
-    <h1 class="main__title">Каталог продукции</h1>
+    <h1 class="visually-hidden">Каталог</h1>
     <section class="catalog" data-test="catalog">
-      <h2 class="visually-hidden">Каталог</h2>
       <div class="catalog__wrapper container">
+        <h2 class="catalog__title ">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item product-card">
             <div class="product-card__wrapper">
@@ -296,12 +298,13 @@
         </ul>
       </div>
     </section>
-    <section class="additional container" data-test="additional">
+    <section class="additional " data-test="additional">
       <div class="line-wrapper">
-        <h2 class="additional__title">Дополнительные товары</h2>
+        <div class="container container--small">
+          <h2 class="additional__title">Дополнительные товары</h2>
+        </div>
       </div>
-      <div class="additional__wrapper">
-
+      <div class="additional__wrapper container">
         <ul class="additional__list ">
           <li class="additional__item optional">
             <h3 class="optional__title">Сахарозаменитель</h3>
@@ -352,11 +355,13 @@
       </div>
     </section>
     <section class="newsletter">
-      <div class="newsletter__wrapper container">
+      <div class="newsletter__wrapper">
         <div class="line-wrapper">
-          <h2 class="newsletter__title">Акции и новинки</h2>
+          <div class="container container--small">
+            <h2 class="newsletter__title">Акции и новинки</h2>
+          </div>
         </div>
-        <div class="newsletter__group">
+        <div class="newsletter__group container">
           <p class="newsletter__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
           <form class="newsletter__form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="newsletter__fieldset">
@@ -375,13 +380,15 @@
     <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <div class="contacts__group contacts__group--secondary container">
-          <p class="contacts__description">приглашаем
-            к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+        <div class="contacts__info">
+          <div class="contacts__group contacts__group--secondary">
+            <p class="contacts__description">приглашаем
+              к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
 
-            Санкт-Петербург
-          </address>
+              Санкт-Петербург
+            </address>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?ll=30.322444%2C59.938575&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=17"></iframe>

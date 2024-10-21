@@ -1,6 +1,6 @@
 .catalog {
   @media (min-width: $tablet-width) {
-    margin-bottom: 51px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,5 +24,24 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 63px 80px;
+  }
+}
+
+.catalog__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000000;
+  padding: 0;
+  margin: 27px 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin: 1px 0 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 1px 0 84px;
   }
 }
