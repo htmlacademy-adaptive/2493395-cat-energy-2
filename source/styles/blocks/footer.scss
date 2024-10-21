@@ -44,12 +44,12 @@
 .footer__link {
   display: flex;
 
-  &:hover svg path {
+  &:hover path {
     fill: #3e3e3e;
     transition: 0.4s;
   }
 
-  &:active svg path {
+  &:active path {
     fill: #6b6b6b;
     transition: 0.4s;
   }

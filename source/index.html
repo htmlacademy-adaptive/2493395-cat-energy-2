@@ -24,23 +24,24 @@
 
   <header class="header" data-test="header">
     <div class="header__wrapper container">
-      <a class="header__logo is-disabled" href="#">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
-          <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
-        </picture>
-      </a>
-      <a class="header__logo-text is-disabled" href="#">
-        <img src="images/logo-text.svg" width="101" height="20" alt="Кэт энерджи">
-      </a>
-      <button class="header__burger js-burger" type="button" aria-label="открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="header-nav main-nav js-navigation">
-
+      <div class="header__group">
+        <a class="header__logo is-disabled" href="#">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="логотип Кэт энерджи">
+          </picture>
+        </a>
+        <a class="header__logo-text is-disabled" href="#">
+          <img src="images/logo-text.svg" width="101" height="20" alt="Кэт энерджи">
+        </a>
+        <button class="header__burger js-burger is-active" type="button" aria-label="открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="main-nav main-nav--no-js js-navigation">
         <ul class="main-nav__list ">
           <li class="main-nav__item main-nav__item--active main-nav__item--secondary">
             <a href="#">
@@ -59,13 +60,13 @@
           </li>
         </ul>
       </nav>
-
     </div>
+
   </header>
   <main class="main">
     <h1 class="visually-hidden">Кэт энерджи</h1>
     <section class="hero hero--background" data-test="hero">
-      <div class="hero__wrapper">
+      <div class="hero__wrapper container">
         <div>
           <h2 class="hero__title">Функциональное
             питание для котов</h2>
@@ -132,52 +133,62 @@
       </div>
     </section>
     <section class="example" data-test="proof">
-      <div class="example__wrapper container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="example__group">
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__number">
-                5 КГ
-              </dt>
-              <dd class="example__result">
-                снижение веса
-              </dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__number">
-                60 ДНЕЙ
-              </dt>
-              <dd class="example__result">
-                затрачено времени
-              </dd>
-            </div>
-          </dl>
-          <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
-        </div>
+      <div class="example__container container">
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__group">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">
+                  5 КГ
+                </dt>
+                <dd class="example__result">
+                  снижение веса
+                </dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">
+                  60 ДНЕЙ
+                </dt>
+                <dd class="example__result">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <p class="example__price">Затраты на питание: <span>15 000 РУБ.</span></p>
+          </div>
 
-      </div>
-      <div class="example__slider">
-        <picture class="example__picture">
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/slider-cat@1x.webp 1x, images/slider-cat@2x.webp 2x">
-          <source type="image/webp" srcset="images/slider-cat-mobile@1x.webp 1x, images/slider-cat-mobile@2x.webp 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/slider-cat@1x.png 1x, images/slider-cat@2x.png 2x" width="560" height="512">
-          <img src="images/slider-cat-mobile@1x.png" srcset="images/slider-cat-mobile@2x.png 2x" width="280" height="256" alt="толстый кот">
-        </picture>
-        <button class="example__button" type="button" aria-label="слайдер"></button>
+        </div>
+        <div class="example__slider">
+          <picture class="example__picture example__picture--left">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/fat-cat@1x.webp 1x, images/fat-cat@2x.webp 2x">
+            <source type="image/webp" srcset="images/fat-cat-mobile@1x.webp 1x, images/fat-cat-mobile@2x.webp 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/fat-cat@1x.png 1x, images/fat-cat@2x.png 2x" width="560" height="512">
+            <img src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="толстый кот">
+          </picture>
+          <picture class="example__picture example__picture--right">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/skinny-cat@1x.webp 1x, images/skinny-cat@2x.webp 2x">
+            <source type="image/webp" srcset="images/skinny-cat-mobile@1x.webp 1x, images/skinny-cat-mobile@2x.webp 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/skinny-cat@1x.png 1x, images/skinny-cat@2x.png 2x" width="560" height="512">
+            <img src="images/skinny-cat-mobile@1x.png" srcset="images/skinny-cat-mobile@2x.png 2x" width="280" height="256" alt="худой кот">
+          </picture>
+          <button class="example__button" type="button" aria-label="слайдер"></button>
+        </div>
       </div>
     </section>
     <section class="contacts" data-test="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
-        <div class="contacts__group container">
-          <p class="contacts__description">приглашаем
-            к сотрудничеству дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+        <div class="contacts__info">
+          <div class="contacts__group contacts__group--secondary">
+            <p class="contacts__description">приглашаем
+              к сотрудничеству дилеров!</p>
+            <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
 
-            Санкт-Петербург
-          </address>
+              Санкт-Петербург
+            </address>
+          </div>
         </div>
         <div class="contacts__map">
           <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/?ll=30.322444%2C59.938575&mode=whatshere&whatshere%5Bpoint%5D=30.323037%2C59.938631&whatshere%5Bzoom%5D=17&z=17"></iframe>

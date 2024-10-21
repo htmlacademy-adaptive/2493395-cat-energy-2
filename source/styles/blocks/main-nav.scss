@@ -7,22 +7,18 @@
   transform: translate(0, 100%);
   display: none;
 
-  @media (min-width: $tablet-width) {
-    position: unset;
-    max-width: 436px;
-    display: flex;
-    transform: translate(0);
-    margin-right: 4px;
-    background: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 476px;
-    margin-right: 1px;
-  }
-
   &.is-show {
     display: block;
+  }
+
+  &--no-js {
+    position: static;
+    transform: translateX(0);
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
